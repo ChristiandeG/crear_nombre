@@ -18,10 +18,9 @@ echo "Nombre guardado correctamente:";
 } else {
 echo "Error al guardar el nombre: " . mysqli_error($conexion);
 }
-// Cerrar la conexión a la base de datos
 mysqli_close($conexion);
 } else {
-echo "Fallo";
+    echo "Fallo";
 }
 ?>
 

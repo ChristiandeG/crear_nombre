@@ -1,22 +1,43 @@
 function guardarNombre() {
     const nombre = document.getElementById('nombre').value;
     axios.post('guardar_nombre.php', { "nombre": nombre })
-    .then(response => {
-    console.log(response.data);
-    })
-    .catch(error => {
-    console.error(error);
-    });
-    }
-    
-    
-    function imprimir_nombre(){
-    let nombre = document.getElementById("nombre").value;
-    let text = document.createElement("p");
-    text.innerHTML = nombre;
-    document.body.appendChild(text);
-    }
-    
-    document.getElementsByTagName("button")[0].addEventListener("click", imprimir_nombre);
-    
-    
+        .then(response => {
+            console.log(response);
+            // let element = document.getElementById("array");
+            // response.data.forEach(item => {
+            //   element.innerHTML += item;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+    // function pintar_consola(){
+    //     fetch('http://localhost/crear_nombre/imprimir_nombre.php')
+    //     .then(response => response.json())
+    //     .then(array => {
+    //       })
+    //     })};
+    // pintar_consola();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
